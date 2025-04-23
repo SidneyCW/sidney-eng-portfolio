@@ -13,7 +13,7 @@ export default function Portfolio() {
   }, []);
 
   const scrollToTop = () => window.scrollTo({ top: 0, behavior: 'smooth' });
-
+  
   const showcaseDetails = {
     1: {
       title: 'Technical Report (ENG2003)',
@@ -50,6 +50,20 @@ export default function Portfolio() {
             <a href="https://www.linkedin.com/in/sidneywood" className="text-accent underline">Visit my LinkedIn</a>
           </div>
         </header>
+
+        {/* 🧑‍💻 About Me Section */}
+        <section>
+          <h2 className="text-2xl font-semibold mb-4">About Me</h2>
+          <div className="flex flex-col md:flex-row items-center gap-6">
+            <img
+              src="/images/headshot.jpeg"
+              className="w-40 h-40 object-cover rounded-full border-4 border-accent shadow-md"
+            />
+            <p className="text-gray-300">
+              I'm a Computer Engineering student with a passion for building efficient systems and solving complex problems. I’ve gained hands-on experience through my internship at Spiri Robotics, where I developed autonomous drone software, analyzed sensor data, and built simulation environments using tools like ROS, Gazebo, and ArduPilot. I’ve also applied full-stack development skills in personal projects, including a win-tracking web app for the Commander format of Magic: The Gathering. My work focuses on combining technical precision with thoughtful user-centered design.
+            </p>
+          </div>
+        </section>
 
         {/* 🎓 Showcase Section */}
         <section>
